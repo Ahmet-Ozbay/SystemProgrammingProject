@@ -24,18 +24,22 @@ RCS/
 └── CMakeLists.txt
 ```
 # 2. Build the Project
-> mkdir build
-> cd build
-> cmake ..
-> make
-
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
 
 # 3. Run the Application
 - On the Raspberry Pi, start these three applications in order:
-> ./GyroSensorNode
-> ./DigitalIONode
-> ./ServerNode
+```bash
+./GyroSensorNode
+./DigitalIONode
+./ServerNode
+```
 
 - On the computer, run the client application and pass the Raspberry Pi's IP Adress:
-> ./ClientNode XXX.XXX.XXX.XXXX
-
+```bash
+./ClientNode XXX.XXX.XXX.XXXX
+```
