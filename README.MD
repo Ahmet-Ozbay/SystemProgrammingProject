@@ -43,3 +43,9 @@ make
 ```bash
 ./ClientNode XXX.XXX.XXX.XXXX
 ```
+
+# Connections
+- Sensor(GPIO{DC5V, GND, 17}),
+- Relay (GPIO{DC5V, GND, 27}),
+- Keypad (GPIO{16,20,21,12,06,13,19,26}),
+- Sensor Modulus (MPU9250) (GPIO{DC3.3V, GND, 02, 03}),
