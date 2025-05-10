@@ -1,6 +1,6 @@
 #ifndef GYRO_LIB_H
 #define GYRO_LIB_H
-
+#include <cstdint>
 /**
  * @brief Class for interfacing with the MPU9250 gyroscope/accelerometer sensor
  * 
