@@ -46,9 +46,11 @@
      std::cout << "Connecting to server at " << serverIP << ":" << serverPort << std::endl;
      
      // Create socket connection
-     SocketCon socket;
-     socket.init(serverIP, serverPort, false); // false means client mode
-     
+     SocketCon socket(SocketCon::Mode::CLIENT, serverIP, serverPort);
+     if (!socket.init()) {
+         std::cerr << "Failed to initialize socket" << std::endl;
+         return 1;
+     }
      std::string response;
      bool running = true;
      
