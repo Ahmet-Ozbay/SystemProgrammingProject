@@ -3,6 +3,7 @@ This project was developed as part of the System Programming class. It combines 
 The project details can be found in Project_Details.pdf file.
 
 # 1. Directory Structure of the Project
+```bash
 RCS/
 ├── include/
 │   ├── GyroLib.h
@@ -21,7 +22,7 @@ RCS/
 ├── GyroSensorNode.cpp
 ├── DigitalIONode.cpp
 └── CMakeLists.txt
-
+```
 # 2. Build the Project
 > mkdir build
 > cd build
