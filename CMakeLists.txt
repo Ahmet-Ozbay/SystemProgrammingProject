@@ -32,10 +32,10 @@ add_executable(ServerNode ServerNode.cpp)
 add_executable(ClientNode ClientNode.cpp)
 
 # Link libraries to executables
-target_link_libraries(GyroSensorNode rcs_lib)
-target_link_libraries(DigitalIONode rcs_lib)
-target_link_libraries(ServerNode rcs_lib)
-target_link_libraries(ClientNode rcs_lib)
+target_link_libraries(GyroSensorNode rcs_lib wiringPi ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(DigitalIONode rcs_lib wiringPi ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(ServerNode rcs_lib wiringPi ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(ClientNode rcs_lib ${CMAKE_THREAD_LIBS_INIT})  # Only link wiringPi if needed
 
 # For Linux/Raspberry Pi, we need to link against additional libraries
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
